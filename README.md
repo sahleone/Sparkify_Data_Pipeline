@@ -11,13 +11,13 @@ Customised Python Airflow Operators were written to load data from AWS S3 into s
 ![Dag dependencies](dependencies.png)
 
 ## Files 
-1. sparkify_dag.py - The DAG execution file
-2. create_tables.sql - Contains the SQL statements to create all tables
-3. sql_queries.py - Contains the SQL statements to insert records into tables
-4. stage_redshift.py - Custom operator, reads files from AWS S3 and loads them into Redshift staging tables.
-load_fact.py - Custom operator to load records into a fact table in Redshift.
-load_dimension.py - Custom operator to load records into dimension tables from staging tables in Redshift.
-data_quality.py - Custom operator to perform data quality checks.
+1. `sparkify_dag.py` - The DAG execution file
+2. `create_tables.sql` - Contains the SQL statements to create all tables
+3. `sql_queries.py` - Contains the SQL statements to insert records into tables
+4. `stage_redshift.py` - Custom operator, reads files from AWS S3 and loads them into Redshift staging tables.
+5. `load_fact.py` - Custom operator to load records into a fact table in Redshift.
+6. `load_dimension.py` - Custom operator to load records into dimension tables from staging tables in Redshift.
+7. `data_quality.py` - Custom operator to perform data quality checks.
 
 ## Instructions
 1. Instantiate Redshift Cluster
